@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Monkeys-Spinning-Monkeys.mp3-8c2a442f26ee95369cab2873248fba7a.mp3str"
+
+[deps]
+
+source_file="res://SFX&Music/Monkeys-Spinning-Monkeys.mp3"
+dest_files=[ "res://.import/Monkeys-Spinning-Monkeys.mp3-8c2a442f26ee95369cab2873248fba7a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

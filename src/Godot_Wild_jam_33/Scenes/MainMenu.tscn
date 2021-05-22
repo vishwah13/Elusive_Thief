@@ -1,0 +1,186 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://FontAssets/FontSettings.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scenes/MainMenu.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/SceneChanger.tscn" type="PackedScene" id=3]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="SceneChanger" parent="." instance=ExtResource( 3 )]
+
+[node name="Menu" type="Control" parent="SceneChanger"]
+margin_right = 1028.0
+margin_bottom = 605.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="SceneChanger/Menu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.333333, 0.333333, 0.333333, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartButton" type="Button" parent="SceneChanger/Menu/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.6786
+margin_top = -117.06
+margin_right = 36.3214
+margin_bottom = -80.0595
+custom_fonts/font = ExtResource( 1 )
+text = "Start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelsButton" type="Button" parent="SceneChanger/Menu/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.6786
+margin_top = -59.1031
+margin_right = 36.3214
+margin_bottom = -18.1031
+custom_fonts/font = ExtResource( 1 )
+text = "levels"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quitbutton" type="Button" parent="SceneChanger/Menu/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.6786
+margin_top = 10.1925
+margin_right = 36.3214
+margin_bottom = 51.1925
+custom_fonts/font = ExtResource( 1 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="levels" type="Control" parent="SceneChanger"]
+visible = false
+margin_right = 1027.0
+margin_bottom = 604.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="SceneChanger/levels"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.333333, 0.333333, 0.333333, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level1" type="Button" parent="SceneChanger/levels/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.1786
+margin_top = -116.56
+margin_right = 36.8214
+margin_bottom = -75.5595
+custom_fonts/font = ExtResource( 1 )
+text = "Level 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2" type="Button" parent="SceneChanger/levels/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.1786
+margin_top = -62.3829
+margin_right = 36.8214
+margin_bottom = -21.3829
+custom_fonts/font = ExtResource( 1 )
+text = "Level 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3" type="Button" parent="SceneChanger/levels/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.1786
+margin_top = -0.646759
+margin_right = 36.8214
+margin_bottom = 40.3532
+custom_fonts/font = ExtResource( 1 )
+text = "Level 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level4" type="Button" parent="SceneChanger/levels/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.1786
+margin_top = 52.2699
+margin_right = 36.8214
+margin_bottom = 93.2699
+custom_fonts/font = ExtResource( 1 )
+text = "Level 4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level5" type="Button" parent="SceneChanger/levels/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.1786
+margin_top = 106.447
+margin_right = 36.8214
+margin_bottom = 147.447
+custom_fonts/font = ExtResource( 1 )
+text = "Level 5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Button" parent="SceneChanger/levels/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.1786
+margin_top = 159.363
+margin_right = 36.8214
+margin_bottom = 200.363
+custom_fonts/font = ExtResource( 1 )
+text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="SceneChanger/Menu/ColorRect/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="SceneChanger/Menu/ColorRect/LevelsButton" to="." method="_on_LevelsButton_pressed"]
+[connection signal="pressed" from="SceneChanger/Menu/ColorRect/Quitbutton" to="." method="_on_Quitbutton_pressed"]
+[connection signal="pressed" from="SceneChanger/levels/ColorRect/Level1" to="." method="_on_Level1_pressed"]
+[connection signal="pressed" from="SceneChanger/levels/ColorRect/Level2" to="." method="_on_Level2_pressed"]
+[connection signal="pressed" from="SceneChanger/levels/ColorRect/Level3" to="." method="_on_Level3_pressed"]
+[connection signal="pressed" from="SceneChanger/levels/ColorRect/Level4" to="." method="_on_Level4_pressed"]
+[connection signal="pressed" from="SceneChanger/levels/ColorRect/Level5" to="." method="_on_Level5_pressed"]
+[connection signal="pressed" from="SceneChanger/levels/ColorRect/Back" to="." method="_on_Back_pressed"]

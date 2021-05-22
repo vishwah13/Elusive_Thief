@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/greeDrums.wav-7c1da979d7e2981ccc7c90b2542059b0.sample"
+
+[deps]
+
+source_file="res://SFX&Music/greeDrums.wav"
+dest_files=[ "res://.import/greeDrums.wav-7c1da979d7e2981ccc7c90b2542059b0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

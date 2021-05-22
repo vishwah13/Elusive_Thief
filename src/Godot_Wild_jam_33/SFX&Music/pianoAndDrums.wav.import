@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pianoAndDrums.wav-90bf7cde03bbff6837194a25bf42a573.sample"
+
+[deps]
+
+source_file="res://SFX&Music/pianoAndDrums.wav"
+dest_files=[ "res://.import/pianoAndDrums.wav-90bf7cde03bbff6837194a25bf42a573.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
