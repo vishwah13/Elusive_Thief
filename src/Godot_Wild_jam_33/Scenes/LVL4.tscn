@@ -52,6 +52,9 @@ position = Vector2( 575.073, 122.935 )
 [node name="EnemyAI2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 562.373, 467.401 )
 
+[node name="EnemyAI3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 157.658, 159.097 )
+
 [node name="HUD" parent="." instance=ExtResource( 7 )]
 pause_mode = 2
 

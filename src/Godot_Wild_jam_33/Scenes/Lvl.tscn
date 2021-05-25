@@ -56,6 +56,10 @@ texture = ExtResource( 6 )
 pause_mode = 1
 position = Vector2( 490.803, 193.02 )
 
+[node name="EnemyAI2" parent="." instance=ExtResource( 9 )]
+pause_mode = 1
+position = Vector2( 505.074, 515.295 )
+
 [node name="HUD" parent="." instance=ExtResource( 8 )]
 pause_mode = 2
 
